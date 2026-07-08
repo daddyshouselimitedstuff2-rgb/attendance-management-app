@@ -9,7 +9,7 @@ const adapter = new PrismaBetterSqlite3({
 
 const prisma = new PrismaClient({ adapter });
 
-export async function POST() {
+export async function GET() {
   const email = "admin@example.com";
   const password = "admin123456";
 
