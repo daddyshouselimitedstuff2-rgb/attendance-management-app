@@ -181,7 +181,19 @@ export default function AdminPage() {
 
   return (
     <main className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-3xl font-bold">管理者画面</h1>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <h1 className="text-3xl font-bold">管理者画面</h1>
+
+        <button
+          type="button"
+          onClick={() => {
+            window.location.href = "/";
+          }}
+          className="w-full rounded bg-blue-600 px-4 py-2 font-semibold text-white shadow-sm hover:bg-blue-700 sm:w-auto"
+        >
+          打刻画面へ戻る
+        </button>
+      </div>
 
       {dashboard && (
         <div className="mt-6 grid gap-4 md:grid-cols-3">

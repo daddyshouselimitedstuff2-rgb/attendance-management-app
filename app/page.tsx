@@ -174,17 +174,6 @@ loadMonthlySummary();
       プロフィール
     </button>
 
-    <button
-      onClick={() => {
-        localStorage.removeItem("loggedIn");
-        localStorage.removeItem("role");
-        localStorage.removeItem("employee");
-        window.location.href = "/login";
-      }}
-      className="rounded bg-gray-600 px-4 py-2 text-white"
-    >
-      ログアウト
-    </button>
   </div>
 </header>
 
